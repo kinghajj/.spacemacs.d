@@ -71,7 +71,10 @@ values."
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
    ;; are declared in a layer which is not a member of
    ;; the list `dotspacemacs-configuration-layers'. (default t)
-   dotspacemacs-delete-orphan-packages t))
+   dotspacemacs-delete-orphan-packages t)
+  (when (string-equal system-type "darwin")
+    (message "adding osx layer")
+    (add-to-list 'dotspacemacs-configuration-layers 'osx)))
 
 (defun dotspacemacs/init ()
   "Initialization function.
@@ -265,8 +268,7 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
-  (when (string-equal system-type "darwin")
-     (add-to-list 'dotspacemacs-configuration-layers 'osx)))
+  )
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
