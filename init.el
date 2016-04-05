@@ -282,7 +282,9 @@ you should place you code here."
   (setq org-agenda-files
         (remove-if-not #'file-exists-p
                        (list "~/org/work.org"
-                             "~/org/home.org"))))
+                             "~/org/home.org")))
+  (setq-default indent-tabs-mode nil)
+  )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
