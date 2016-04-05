@@ -23,6 +23,7 @@ values."
      chrome
      dockerfile
      elm
+     fasd
      finance
      emacs-lisp
      eyebrowse
