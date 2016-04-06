@@ -22,6 +22,7 @@ values."
      chrome
      dockerfile
      elm
+     erc
      fasd
      finance
      emacs-lisp
@@ -60,6 +61,7 @@ values."
      spell-checking
      syntax-checking
      themes-megapack
+     unimpaired
      vagrant
      version-control
      yaml
