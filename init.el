@@ -15,8 +15,7 @@ values."
    ;; List of configuration layers to load. If it is the symbol `all' instead
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
-   '(
-     ansible
+   `(ansible
      auto-completion
      c-c++
      clojure
@@ -38,6 +37,8 @@ values."
      latex
      markdown
      org
+     ,(when (string-equal system-type "darwin")
+        'osx)
      pandoc
      python
      racket
@@ -74,9 +75,7 @@ values."
    ;; are declared in a layer which is not a member of
    ;; the list `dotspacemacs-configuration-layers'. (default t)
    dotspacemacs-delete-orphan-packages t)
-  (when (string-equal system-type "darwin")
-    (message "adding osx layer")
-    (add-to-list 'dotspacemacs-configuration-layers 'osx)))
+  )
 
 (defun dotspacemacs/init ()
   "Initialization function.
