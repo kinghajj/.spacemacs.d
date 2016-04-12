@@ -288,6 +288,8 @@ you should place you code here."
   (require 'key-chord)
   (key-chord-mode 1)
   (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
+  (add-hook 'text-mode-hook 'turn-on-auto-fill)
+  (add-hook 'org-mode-hook 'turn-on-auto-fill)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
