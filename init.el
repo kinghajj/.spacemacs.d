@@ -36,8 +36,6 @@ values."
      latex
      markdown
      org
-     ,(when (string-equal system-type "darwin")
-        'osx)
      pandoc
      python
      racket
