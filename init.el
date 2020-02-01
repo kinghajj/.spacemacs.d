@@ -20,13 +20,11 @@ values."
      c-c++
      clojure
      chrome
-     dockerfile
      elm
      erc
      fasd
      finance
      emacs-lisp
-     eyebrowse
      (go :variables
          gofmt-command "goimports")
      git
@@ -61,7 +59,6 @@ values."
      spell-checking
      syntax-checking
      themes-megapack
-     unimpaired
      vagrant
      version-control
      yaml
