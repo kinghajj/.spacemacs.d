@@ -32,7 +32,7 @@ values."
      haskell
      html
      java
-     javascript
+     ;; javascript
      latex
      markdown
      org
@@ -45,7 +45,7 @@ values."
      restclient
      ruby
      rust
-     scala
+     ;; scala
      search-engine
      (shell :variables
             shell-default-shell 'multi-term
